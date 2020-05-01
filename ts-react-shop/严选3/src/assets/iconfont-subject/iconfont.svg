@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="icon_pencil-edit" unicode="&#58926;" d="M640 832H131.2A67.2 67.2 0 0 1 64 764.8v-761.6A67.2 67.2 0 0 1 131.2-64h761.6a67.2 67.2 0 0 1 67.2 67.2V512l-64-64v-448H128V768h448zM960 736.672a31.488 31.488 0 0 1-1.728 10.496 137.184 137.184 0 0 1-83.2 83.2 31.488 31.488 0 0 1-10.4 1.632h-40.448l-45.248-45.248 135.776-135.776L960 696.224V736.672zM735.488 743.232L371.68 379.456l-67.872-203.648 203.648 67.872L871.232 607.488l-135.744 135.744z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="zuojiantou" unicode="&#58921;" d="M312.4 407.376L668.8 743.024a29.36 29.36 0 0 0 42.352 0 31.408 31.408 0 0 0 0-43.552L376.24 384l334.912-315.36a31.408 31.408 0 0 0 0-43.552 29.36 29.36 0 0 0-42.352 0L312.4 360.736a36.32 36.32 0 0 0 0 46.64z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

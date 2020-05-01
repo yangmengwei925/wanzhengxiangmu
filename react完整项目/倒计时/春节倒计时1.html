@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2020年春节倒计时 2020春節倒計時 2020 Spring Festival Countdown</title>
+</head>
+<body onload="showtime()">
+    <h2>2020年春节倒计时 2020春節倒計時 2020 Spring Festival Countdown</h2>
+    <hr><br>
+    <span id='span'></span>
+</body>
+    <script type="text/javascript">
+        //全选事件调用方法
+            function showtime(){            
+                setInterval("time_get()",500);
+            }
+            var countdown = function ()
+    {
+        var reg = /^\d{2}$/;
+        var ending = new Date ("2020/1/25");
+        var now = new Date;
+        if (now >= ending)
+        {
+            clearTimeout(this.timeout);
+            div.innerHTML = "春节快乐!!</br>春節快樂!!</br>Happy Spring Festival!!";
+            return;
+        }
+        var disc = ending - now;
+        var days = parseInt (disc / 1000 / 60 / 60 / 24);
+        var hours = parseInt (disc / 1000 / 60 / 60 % 24);
+        hour = !reg.test(hours) ? "0" + hours : hours;
+        var minutes = parseInt (disc / 1000 / 60 % 60);
+        minute = !reg.test(minutes) ? "0" + minutes : minutes;
+        var seconds = parseInt (disc / 1000 % 60);
+        second = !reg.test(seconds) ? "0" + seconds : seconds;
+        div.innerHTML = "距离春节还有" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒"+'，大家努力工作多拿些年终奖，同学们用功复习，拿最好的成绩去迎接春节，加油！春节在向我们招手，最后给大家拜个早年，春节快乐！^_^';
+        this.timeout = setTimeout (countdown, 1000);
+
+    }
+    onload = countdown;
+</script>
+</head>
+<body>
+    <div id="div"></div>
+</body>
+</html>

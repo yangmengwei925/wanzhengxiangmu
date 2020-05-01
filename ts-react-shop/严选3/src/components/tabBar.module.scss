@@ -1,0 +1,12 @@
+.tab {
+  @include wh(100%, 100%);
+  font-size: 0.27rem;
+
+  div {
+    height: .9rem;
+    @include flex(column, center, center);
+  }
+  div.active{
+    color: skyblue;;
+  }
+}

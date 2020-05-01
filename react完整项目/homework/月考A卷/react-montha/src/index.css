@@ -1,0 +1,19 @@
+.active{
+    color: red;
+}
+.gray{
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+    background: gray;
+}
+.blue{
+    height: 20px;
+    display: inline-block;
+    background: blue;
+}
+.text{
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}

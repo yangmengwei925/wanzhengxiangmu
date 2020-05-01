@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+  <input type="file" id="upload">
+
+</body>
+<script>
+
+  let ele = document.getElementById("upload")
+  ele.onchange = (e) => {
+    // console.log(e, "e------")
+    let files = e.target.files;
+    let form = new FormData();
+    for (let i = 0; i < files.length; i++) {
+      console.log(files[i].name);
+      form.append(files[i].name, files[i]);
+
+      axios({
+        methods: 'post',
+        url: 'http://192.168.43.224/upload',
+        data: form
+      }).then(body => {
+        console.log(body, "body-------")
+      }).catch(error => {
+        console.log(error, "error------")
+      })
+    }
+  }
+</script>
+
+</html>

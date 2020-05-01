@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1312436",
+      "name": "icon_pencil-edit",
+      "font_class": "icon_pencil-edit",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "5037718",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    }
+  ]
+}

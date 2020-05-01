@@ -1,0 +1,30 @@
+.header {
+  @include wh(100%, 1rem);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
+  z-index: 10;
+  @include flex(row, center, center);
+
+  div {
+    height: 100%;
+    @include flex(row, center, center);
+  }
+
+  .left,
+  .right {
+    width: .6rem;
+  }
+
+  .left i{
+    color: rgba(0, 0, 0, .8);
+    font-weight: 600;
+    font-size: .35rem;
+  }
+  .title {
+    flex: 1 1;
+    font-size: .32rem;
+  }
+}

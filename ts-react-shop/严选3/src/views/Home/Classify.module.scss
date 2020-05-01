@@ -1,0 +1,90 @@
+.Clissify {
+  padding-bottom: 1.04rem;
+  box-sizing: border-box;
+}
+
+.searchWrap {
+  @include wh(100%, .8rem);
+  @include flex(row, center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
+
+  .searchInput {
+    @include wh(90%, 70%);
+    @include flex(row, center, center);
+    background: #ededed;
+    border-radius: .1rem;
+    font-size: .28rem;
+    color: #666;
+  }
+}
+
+.tabWarp {
+  position: fixed;
+  top: .84rem;
+  bottom: 1rem;
+  width: 2rem;
+  background: #fff;
+  border-right: 1px solid #f2f2f6;
+}
+
+.categogContet {
+  margin-top: .84rem;
+  margin-left: 2rem;
+  overflow-x: hidden;
+
+  .categoryWrap {
+    @include flex(row, center, center);
+    height: 100px;
+    background: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: .3rem;
+  }
+
+  .categoryTitle {
+    @include flex(row, center, center);
+    background: #fff;
+    padding: .2rem;
+    font-size: .28rem;
+    color: #2196f3;
+
+    div {
+      @include wh(.4rem, 1px);
+      background: #2196f3;
+      margin: 0 .2rem;
+    }
+  }
+
+  .subCategory {
+    background: #fff;
+    @include flex(row, flex-start, center, wrap);
+    padding: 0 .2rem .2rem;
+
+    .subCategoryItem {
+      width: 50%;
+      text-decoration: none;
+      color: black;
+
+      img {
+        opacity: 1;
+        width: 100%;
+        padding: .2rem;
+        height: auto;
+      }
+
+      div {
+        font-size: .28rem;
+        text-align: center;
+        padding: .02rem 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
